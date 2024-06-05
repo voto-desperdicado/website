@@ -32,6 +32,7 @@ import {
   SelectContent,
   Select,
 } from "@/components/ui/select";
+import { SVGProps } from "react";
 
 export function Landing() {
   return (
@@ -39,7 +40,7 @@ export function Landing() {
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <VoteIcon className="h-6 w-6" />
-          <span className="sr-only">D'Hondt Voting System</span>
+          <span className="sr-only">D&lsquo;Hondt Voting System</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -70,12 +71,13 @@ export function Landing() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Understanding the D'Hondt Voting System in Portugal
+                    Understanding the D&lsquo;Hondt Voting System in Portugal
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                    The D'Hondt voting system is used in Portugal to allocate
-                    parliamentary seats based on population. Learn how this
-                    system works and how it impacts regional representation.
+                    The D&lsquo;Hondt voting system is used in Portugal to
+                    allocate parliamentary seats based on population. Learn how
+                    this system works and how it impacts regional
+                    representation.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -95,7 +97,7 @@ export function Landing() {
                 </div>
               </div>
               <img
-                alt="D'Hondt Voting System"
+                alt="D&lsquo;Hondt Voting System"
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
                 height="550"
                 src="/placeholder.svg"
@@ -115,7 +117,7 @@ export function Landing() {
                   Select Your Party
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Understand Your Vote's Impact
+                  Understand Your Vote&lsquo;s Impact
                 </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Select the party you vote for to see how your vote contributes
@@ -127,8 +129,8 @@ export function Landing() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-2">
                   <Label htmlFor="party">Select Your Party</Label>
-                  <Select id="party">
-                    <SelectTrigger>
+                  <Select>
+                    <SelectTrigger id="party">
                       <SelectValue placeholder="Select a party" />
                     </SelectTrigger>
                     <SelectContent>
@@ -143,16 +145,16 @@ export function Landing() {
                 </div>
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">
-                    Your Party's Representation in Parliament
+                    Your Party&lsquo;s Representation in Parliament
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Based on the D'Hondt system, your party received X% of the
-                    total votes, resulting in Y parliamentary seats.
+                    Based on the D&lsquo;Hondt system, your party received X% of
+                    the total votes, resulting in Y parliamentary seats.
                   </p>
                 </div>
               </div>
               <img
-                alt="D'Hondt Voting System Visualization"
+                alt="D&lsquo;Hondt Voting System Visualization"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
                 src="/placeholder.svg"
@@ -172,7 +174,7 @@ export function Landing() {
                   Select Your Region
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Understand Your Vote's Power
+                  Understand Your Vote&lsquo;s Power
                 </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Select the region where you vote to see how your vote
@@ -185,8 +187,8 @@ export function Landing() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="grid gap-2">
                   <Label htmlFor="region">Select Your Region</Label>
-                  <Select id="region">
-                    <SelectTrigger>
+                  <Select>
+                    <SelectTrigger id="region">
                       <SelectValue placeholder="Select a region" />
                     </SelectTrigger>
                     <SelectContent>
@@ -201,16 +203,16 @@ export function Landing() {
                 </div>
                 <div className="grid gap-1">
                   <h3 className="text-xl font-bold">
-                    Your Vote's Impact in Parliament
+                    Your Vote&lsquo;s Impact in Parliament
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    Based on the D'Hondt system, your region has X parliamentary
-                    seats, representing Y% of the total.
+                    Based on the D&lsquo;Hondt system, your region has X
+                    parliamentary seats, representing Y% of the total.
                   </p>
                 </div>
               </div>
               <img
-                alt="D'Hondt Voting System Visualization"
+                alt="D&lsquo;Hondt Voting System Visualization"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
                 src="/placeholder.svg"
@@ -224,22 +226,22 @@ export function Landing() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                  D'Hondt Voting System
+                  D&lsquo;Hondt Voting System
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   How the System Works
                 </h2>
                 <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  The D'Hondt voting system is used in Portugal to allocate
-                  parliamentary seats based on population. This means that
-                  different regions have varying levels of representation in the
-                  national parliament.
+                  The D&lsquo;Hondt voting system is used in Portugal to
+                  allocate parliamentary seats based on population. This means
+                  that different regions have varying levels of representation
+                  in the national parliament.
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
               <img
-                alt="D'Hondt Voting System Visualization"
+                alt="D&lsquo;Hondt Voting System Visualization"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
                 height="310"
                 src="/placeholder.svg"
@@ -251,7 +253,7 @@ export function Landing() {
                     Proportional Representation
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    The D'Hondt system ensures that the distribution of
+                    The D&lsquo;Hondt system ensures that the distribution of
                     parliamentary seats is proportional to the population of
                     each region.
                   </p>
@@ -271,8 +273,8 @@ export function Landing() {
                     Inclusive Decision-Making
                   </h3>
                   <p className="text-gray-500 dark:text-gray-400">
-                    The D'Hondt system aims to ensure that all regions have a
-                    voice in the national parliament, promoting inclusive
+                    The D&lsquo;Hondt system aims to ensure that all regions
+                    have a voice in the national parliament, promoting inclusive
                     decision-making.
                   </p>
                 </div>
@@ -287,11 +289,11 @@ export function Landing() {
           <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Join the D'Hondt Voting System Community
+                Join the D&lsquo;Hondt Voting System Community
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Connect with others interested in understanding and improving
-                the D'Hondt voting system in Portugal.
+                the D&lsquo;Hondt voting system in Portugal.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
@@ -319,7 +321,7 @@ export function Landing() {
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Help Improve the D'Hondt Voting System
+                Help Improve the D&lsquo;Hondt Voting System
               </h2>
             </div>
           </div>
@@ -329,7 +331,7 @@ export function Landing() {
   );
 }
 
-function VoteIcon(props) {
+function VoteIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
